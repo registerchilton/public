@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Altimeter - Support</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #007AFF;
+            border-bottom: 2px solid #007AFF;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+        .contact {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .feature {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scientific Altimeter</h1>
+    <p><em>Precise Elevation Measurement for Research and Field Work</em></p>
+
+    <h2>About</h2>
+    <p>Scientific Altimeter is a professional-grade elevation measurement tool designed for researchers, scientists, and outdoor professionals. The app combines GPS altitude data with barometric pressure readings and ground-truth calibration using USGS elevation data.</p>
+
+    <h2>Key Features</h2>
+    <div class="feature">
+        <strong>GPS Altitude:</strong> Real-time altitude measurement using device GPS
+    </div>
+    <div class="feature">
+        <strong>Barometer Calibration:</strong> Automatically calibrates barometric altitude using USGS National Map API for ground elevation
+    </div>
+    <div class="feature">
+        <strong>Manual Calibration:</strong> Set known elevation at your current location for offline use
+    </div>
+    <div class="feature">
+        <strong>Data Logging:</strong> Record altitude measurements for later analysis
+    </div>
+    <div class="feature">
+        <strong>Offline Capable:</strong> Works without internet connection using GPS-only mode
+    </div>
+
+    <h2>How It Works</h2>
+    <p>The app uses your device's GPS and barometer sensors to measure altitude. For improved accuracy, it can calibrate the barometer using USGS ground elevation data from the National Map Elevation Point Query Service (EPQS).</p>
+    
+    <p><strong>Data Source:</strong> USGS EPQS API (<a href="https://epqs.nationalmap.gov" target="_blank">epqs.nationalmap.gov</a>) - A free, public government service providing ground elevation data.</p>
+
+    <h2>Requirements</h2>
+    <ul>
+        <li>iOS device with GPS capability</li>
+        <li>Location permission (required for GPS altitude)</li>
+        <li>Internet connection (for USGS calibration only; not required for basic operation)</li>
+        <li>Works best outdoors with clear GPS signal</li>
+    </ul>
+
+    <h2>Privacy</h2>
+    <p>This app collects location data solely for altitude measurement and USGS calibration. No location data is stored, shared, or transmitted to third parties. Location queries to the USGS API contain only latitude/longitude coordinates needed for elevation lookup.</p>
+
+    <h2>Frequently Asked Questions</h2>
+    
+    <h3>Why does the app need location permission?</h3>
+    <p>Location permission is required to access your device's GPS for altitude measurement and to query the USGS API for ground elevation calibration.</p>
+
+    <h3>Does the app work offline?</h3>
+    <p>Yes. The app can operate in GPS-only mode without internet. Barometer calibration requires internet to access USGS data, but manual calibration can be used offline.</p>
+
+    <h3>How accurate is the altitude measurement?</h3>
+    <p>GPS altitude typically has accuracy of ±10-20 meters. When calibrated with the barometer, accuracy can improve to ±1-3 meters depending on atmospheric conditions.</p>
+
+    <h3>What is the USGS API?</h3>
+    <p>The USGS Elevation Point Query Service is a free, public API provided by the U.S. Geological Survey that returns ground elevation for any location in the United States.</p>
+
+    <div class="contact">
+        <h2>Support</h2>
+        <p>For questions, feedback, or support:</p>
+        <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p><strong>Developer:</strong> Mark [Your Last Name]<br>
+        GIS/Watershed Specialist, UNC Chapel Hill</p>
+    </div>
+
+    <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; color: #888; font-size: 0.9em;">
+        <p>Scientific Altimeter © 2025</p>
+    </footer>
+</body>
+</html>
